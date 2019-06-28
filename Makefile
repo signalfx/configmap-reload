@@ -19,10 +19,10 @@ export CGO_ENABLED := 0
 GOOS ?= $(shell go env GOOS)
 GOARCH ?= $(shell go env GOARCH)
 BUILD_DIR ?= ./out
-ORG := github.com/jimmidyson
+ORG := github.com/signalfx
 REPOPATH ?= $(ORG)/configmap-reload
-DOCKER_IMAGE_NAME ?= jimmidyson/configmap-reload
-DOCKER_IMAGE_TAG ?= latest
+DOCKER_IMAGE_NAME ?= quay.io/signalfuse/configmap-reload
+DOCKER_IMAGE_TAG ?= v1
 
 LDFLAGS := -s -w -extldflags '-static'
 
